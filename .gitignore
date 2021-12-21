@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+**/logs
 
 # BlueJ files
 *.ctxt
@@ -20,6 +21,13 @@
 *.rar
 
 !gradle-wrapper.jar
+
+*.launch
+.classpath
+.settings/org.eclipse.buildship.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+**/run/logs/debug-1.log.gz
+.idea/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

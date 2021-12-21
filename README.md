@@ -87,6 +87,15 @@ https://code.visualstudio.com/download
 4. Run without debugging to run program 
 
 
+If your branch is behind the Master
+-----------------------------------
+1. git checkout master
+2. git pull origin master
+3. git checkout BranchNameBehindCommit(your branch)
+4. git merge master // Now your branch is in sync with local Master branch
+5. git push origin branchBehindCommit
+
+
 
 
 

@@ -1,8 +1,8 @@
 MINECRAFT MOD
 =============
 
-Java Installation
------------------
+Java Installation (For Windows)
+-------------------------------
 
 1. Download Openjdk17 https://jdk.java.net/17/. 
 2. Extract the file. 
@@ -13,6 +13,12 @@ Java Installation
    - Click Advanced and then Environment Variables.
    - Select path -> edit -> New -> browse -> jdk-17.0.1.jdk -> bin
 6. Set correct version of Java in your preferred IDE
+
+**For Mac**
+1. Download Openjdk17 https://jdk.java.net/17/. 
+2. Follow instructions https://java.tutorials24x7.com/blog/how-to-install-openjdk-17-on-mac
+3. OR use home brew and jenv to install java 17. 
+
 
 Git Installation (Only for Windows)
 ----------------

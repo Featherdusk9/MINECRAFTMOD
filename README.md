@@ -1,8 +1,12 @@
 MINECRAFT MOD
 =============
 
-Java Installation (For Windows)
--------------------------------
+First create a folder where you will clone the repo. 
+
+Java Installation
+-----------------
+
+**For Windows**
 
 1. Download Openjdk17 https://jdk.java.net/17/. 
 2. Extract the file. 
@@ -16,9 +20,26 @@ Java Installation (For Windows)
 
 **For Mac**
 1. Download Openjdk17 https://jdk.java.net/17/. 
-2. Install home brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-3. Install Jenv `brew install jenv`
-4. 
+2. Open Terminal 
+3. Go to folder where jdk17 is `cd <where you have downloaded OpenJDK17>`
+4. Move folder to /Library/Java/JavaVirtualMachines/ `sudo mv jdk-17.0.1.jdk /Library/Java/JavaVirtualMachines/`
+5. Close and reopen terminal
+6. Install home brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+7. Install Jenv `brew install jenv`
+8. Check if you have bash or zsh do `echo $SHELL`
+Bash
+   - `echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile`
+   - `echo 'eval "$(jenv init -)"' >> ~/.bash_profile`
+Zsh 
+   - `echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc`
+   - `echo 'eval "$(jenv init -)"' >> ~/.zshrc`
+
+9. Add to Jenv `jenv add /System/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home`
+10. `jenv versions`
+11. Go to folder where you will be storing your git repos on your machine 
+12. `jenv local 17`
+13. Check version of java in that directory `java -version`
+<img width="471" alt="Screen Shot 2021-12-22 at 1 37 59 PM" src="https://user-images.githubusercontent.com/90982699/147139773-e71579ca-6aec-4724-9f51-40e38f9da278.png">
 
 
 Git Installation (Only for Windows)
@@ -26,15 +47,19 @@ Git Installation (Only for Windows)
 
 1. Install git for windows https://git-scm.com/downloads
 2. Control panel -> Systems and security -> System -> Advanced System settings -> Advanced -> environment variables -> Select path -> edit -> New -> browse -> git folder -> bin
-3. Go to user folder
-4. create a Git folder 
-5. Use commandline and go inside your git folder
-6. `git clone https://github.com/Featherdusk9/MinecraftMod.git`
-7. `cd MinecraftMod`
-8. `git checkout -b <name>-dev` for example `git checkout -b vib-dev` This creates a new branch
-9. `git pull` to make sure the branch is up to date
-10. You can use `git branch` to see all the branches you have on your local machine
-11. You can use `git status` to see any changes that have been made to files 
+
+Clone the Repository
+--------------------
+
+(Alternatively you could use Git Desktop to manage your repo but the follow instructions are for commandline prompts) 
+
+1. Use commandline and go inside your git folder
+2. `git clone https://github.com/Featherdusk9/MinecraftMod.git`
+3. `cd MinecraftMod`
+4. `git checkout -b <name>-dev` for example `git checkout -b vib-dev` This creates a new branch
+5. `git pull` to make sure the branch is up to date
+6. You can use `git branch` to see all the branches you have on your local machine
+7. You can use `git status` to see any changes that have been made to files 
 
 **To Push Changes**
 

@@ -1,8 +1,6 @@
 MINECRAFT MOD
 =============
 
-sdfsfsd
-
 Java Installation (For Windows)
 -------------------------------
 
@@ -18,8 +16,9 @@ Java Installation (For Windows)
 
 **For Mac**
 1. Download Openjdk17 https://jdk.java.net/17/. 
-2. Follow instructions https://java.tutorials24x7.com/blog/how-to-install-openjdk-17-on-mac
-3. OR use home brew and jenv to install java 17. 
+2. Install home brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+3. Install Jenv `brew install jenv`
+4. 
 
 
 Git Installation (Only for Windows)
@@ -95,13 +94,6 @@ https://code.visualstudio.com/download
 4. Run without debugging to run program 
 
 
-If your branch is behind the Master
------------------------------------
-1. git checkout master
-2. git pull origin master
-3. git checkout BranchNameBehindCommit(your branch)
-4. git merge master // Now your branch is in sync with local Master branch
-5. git push origin branchBehindCommit
 
 
 

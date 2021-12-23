@@ -18,7 +18,7 @@ Java Installation
    - Select path -> edit -> New -> browse -> jdk-17.0.1.jdk -> bin
 6. Set correct version of Java in your preferred IDE
 
-**For Mac**
+**For Mac (Using Homebrew and Jenv)**
 1. Download Openjdk17 https://jdk.java.net/17/. 
 2. Open Terminal 
 3. Go to folder where jdk17 is `cd <where you have downloaded OpenJDK17>`
@@ -26,10 +26,12 @@ Java Installation
 5. Close and reopen terminal
 6. Install home brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 7. Install Jenv `brew install jenv`
-8. Check if you have bash or zsh do `echo $SHELL`
+8. Check if you have bash or zsh do `echo $SHELL`.   
+
 Bash
    - `echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile`
    - `echo 'eval "$(jenv init -)"' >> ~/.bash_profile`
+
 Zsh 
    - `echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc`
    - `echo 'eval "$(jenv init -)"' >> ~/.zshrc`
@@ -41,6 +43,16 @@ Zsh
 13. Check version of java in that directory `java -version`
 <img width="471" alt="Screen Shot 2021-12-22 at 1 37 59 PM" src="https://user-images.githubusercontent.com/90982699/147139773-e71579ca-6aec-4724-9f51-40e38f9da278.png">
 
+**For Mac (Manually setting the path)**
+https://knasmueller.net/how-to-install-java-openjdk-17-on-macos-big-sur
+1. Follow steps in link but for setting the path do the following depending on what your computer uses.
+2. Check if you have bash or zsh do `echo $SHELL`.   
+
+Bash
+   - `echo -n "\nexport JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home" >> ~/.bash_profile`
+
+Zsh 
+   - `echo -n "\nexport JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home" >> ~/.zshrc`
 
 Git Installation (Only for Windows)
 ----------------
